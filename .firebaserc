@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "angular-hosting",
+    "form": "web-interview",
+    "yes": "admin-panel-2e343",
+    "admin-panel": "admin-panel-2e343"
+  }
+}

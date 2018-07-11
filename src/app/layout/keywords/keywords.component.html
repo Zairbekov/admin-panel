@@ -1,23 +1,41 @@
 <div [@routerTransition]>
-    <app-page-header [heading]="'Tables'" [icon]="'fa-table'"></app-page-header>
+    <app-page-header [heading]="'Keywords'" [icon]="'fa-table'"></app-page-header>
     <div class="row">
         <div class="col col-lg-12">
             <div class="card mb-3">
-                <div class="card-header">Contextual classes</div>
+                <div class="card-header">Vacancy Keywords</div>
                 <div class="row">
     <div class="col-sm-12">
             <!-- Large modal -->
             <div class="card-body">
-                <button class="btn btn-primary" (click)="open(content)">Create Question</button>
+                <button class="btn btn-primary" (click)="open(content)">Create Keyword</button>
                 <ng-template #content let-c="close" let-d="dismiss">
                     <div class="modal-header">
-                        <h4 class="modal-title">Modal title</h4>
+                        <h4 class="modal-title">Create Keywords</h4>
                         <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>One fine body&hellip;</p>
+                        <form role="form">
+                            <fieldset class="form-group">
+                                <label>Keywords</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </fieldset>
+                            <div class="form-group">
+                                <label>Vacancies</label>
+                                <select class="form-control">
+                                    <option>Front end Developer</option>
+                                    <option>Back end Developer</option>
+                                    <option>Full stack Developer</option>
+                                    <option>Manager</option>
+                                    <option>HR</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-success">Save</button>
+
+                        </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
@@ -28,20 +46,53 @@
 </div>
                 <table class="card-body table">
                     <thead>
-                    <tr>
+                    <tr style="text-align: center">
                         <th>#</th>
-                        <th>Title</th>
-                        <th>Status</th>
+                        <th>Keywords</th>
+                        <th>Vacancy</th>
                         <th>Options</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="table-info">
+                    <tr style="text-align: center">
                         <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>
+                        <td>front, back, java, c++, fullstack</td>
+                        <td>Front end Developer
                         </td>
-                        <td>@mdo</td>
+                        <td>
+                            <button class="btn btn-outline-success">
+                                <i class="fa fa-pencil" aria-hidden="true"> Edit</i>
+                            </button>&nbsp;
+                            <button class="btn btn-outline-danger">
+                                <i class="fa fa-trash" aria-hidden="true"> Delete</i>
+                            </button>
+                        </td>
+                    </tr><tr style="text-align: center">
+                        <th scope="row">1</th>
+                        <td>front, back, java, c++, fullstack</td>
+                        <td>Front end Developer
+                        </td>
+                        <td>
+                            <button class="btn btn-outline-success">
+                                <i class="fa fa-pencil" aria-hidden="true"> Edit</i>
+                            </button>&nbsp;
+                            <button class="btn btn-outline-danger">
+                                <i class="fa fa-trash" aria-hidden="true"> Delete</i>
+                            </button>
+                        </td>
+                    </tr><tr style="text-align: center">
+                        <th scope="row">1</th>
+                        <td>front, back, java, c++, fullstack</td>
+                        <td>Front end Developer
+                        </td>
+                        <td>
+                            <button class="btn btn-outline-success">
+                                <i class="fa fa-pencil" aria-hidden="true"> Edit</i>
+                            </button>&nbsp;
+                            <button class="btn btn-outline-danger">
+                                <i class="fa fa-trash" aria-hidden="true"> Delete</i>
+                            </button>
+                        </td>
                     </tr>
                     </tbody>
                 </table>

@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { TablesRoutingModule } from './tables-routing.module';
-import { TablesComponent } from './tables.component';
 import { PageHeaderModule } from './../../shared';
 import {HttpModule} from '@angular/http';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {KeywordsRoutingModule} from './keywords-routing.module';
+import {KeywordsComponent} from './keywords.component';
 
 @NgModule({
-    imports: [CommonModule, TablesRoutingModule, PageHeaderModule, HttpModule, NgbModule.forRoot()],
-    declarations: [TablesComponent]
+    imports: [CommonModule, KeywordsRoutingModule, PageHeaderModule, HttpModule, NgbModule.forRoot()],
+    declarations: [KeywordsComponent]
 
 })
-export class TablesModule {}
+export class KeywordsModule {}

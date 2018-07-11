@@ -5,11 +5,11 @@ import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
     selector: 'app-tables',
-    templateUrl: './tables.component.html',
-    styleUrls: ['./tables.component.scss'],
+    templateUrl: './keywords.component.html',
+    styleUrls: ['./keywords.component.scss'],
     animations: [routerTransition()]
 })
-export class TablesComponent implements OnInit {
+export class KeywordsComponent implements OnInit {
     constructor(public http: HttpClient, public modalService: NgbModal) {}
     seconds: any;
     closeResult: string;
