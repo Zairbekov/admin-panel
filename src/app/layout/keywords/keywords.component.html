@@ -1,0 +1,51 @@
+<div [@routerTransition]>
+    <app-page-header [heading]="'Tables'" [icon]="'fa-table'"></app-page-header>
+    <div class="row">
+        <div class="col col-lg-12">
+            <div class="card mb-3">
+                <div class="card-header">Contextual classes</div>
+                <div class="row">
+    <div class="col-sm-12">
+            <!-- Large modal -->
+            <div class="card-body">
+                <button class="btn btn-primary" (click)="open(content)">Create Question</button>
+                <ng-template #content let-c="close" let-d="dismiss">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal title</h4>
+                        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+                    </div>
+                </ng-template>
+            </div>
+        </div>
+</div>
+                <table class="card-body table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Status</th>
+                        <th>Options</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-info">
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>
+                        </td>
+                        <td>@mdo</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
